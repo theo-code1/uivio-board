@@ -1,12 +1,11 @@
+import React from 'react';
+import HeroSection from "./components/HeroSection";
+
 const App = () => {
   return(
-    <>
-      <h1 className="text-4xl font-semibold ">hello world </h1>
-      <h1 class="font-inter-medium font-medium text-4xl">hello world </h1>
-      <h1 class="font-inter-bold font-bold text-4xl">hello world </h1>
-      <h1 class="font-inter- font-bold text-4xl">hello world </h1>
-      <h1 class="font-inter-regular font-regular text-4xl">hello world </h1>
-    </>
+    <div className="max-w-screen h-auto bg-white ">
+      <HeroSection />
+    </div>
   )
 }
 export default App;

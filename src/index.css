@@ -21,4 +21,6 @@
     --font-inter-bold: "inter-bold", sans-serif;
     --font-inter-regular: "inter-regular", sans-serif;
     --font-inter-semibold: "inter-semibold", sans-serif;
+    --color-primary-blue: '#0A84FF';
+    --color-secondary-blue: '#0069D4';
 }
