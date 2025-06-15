@@ -24,3 +24,10 @@
     --color-primary-blue: '#0A84FF';
     --color-secondary-blue: '#0069D4';
 }
+
+.design-headline{
+    background: linear-gradient(225deg, #EF6414, #FEAB30 80%);
+    /* transform: rotate(45deg);     */
+    background-clip: text;
+    color: transparent;
+}
