@@ -1,13 +1,13 @@
 
-function DesignCard({Label, Headline, WorkImg, Color, ImgClassName }){
+function DesignCard({Label, Headline, WorkImg, Color, ImgClassName, CardClassName, headlineClassName='text-black', PaddingTop }){
     
     return(
-        <article className="w-[70%] bg-white font-inter-regular p-20 pt-12 mx-auto rounded-4xl flex flex-col gap-4">
-            <h3 className={`label font-semibold text-${Color}-500 text-center`}>{Label}</h3>
-            <h1 className='text-center text-5xl font-inter-semibold font-semibold '>{Headline}  </h1>
+        <article className={` w-[90%] mdw-[85%] lg:w-[70%] bg-white font-inter-regular p-4 md:p-8 lg:p-20 pt-${PaddingTop} mx-auto rounded-3xl md:rounded-4xl flex flex-col gap-2 md:gap-4 overflow-hidden ${CardClassName} `}>
+            <h3 className={`label text-[12px] md:text-[16px] font-semibold ${Color} text-center`}>{Label}</h3>
+            <h1 className={`text-center text-3xl md:text-5xl font-inter-semibold font-semibold ${headlineClassName}`}>{Headline}  </h1>
             <img src={WorkImg} alt="Clipboard History" className={`mx-auto ${ImgClassName}`} draggable='false'/>
 
         </article>
     )
 }
-export default DesignCard;
+export default DesignCard; 
