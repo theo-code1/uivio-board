@@ -17,7 +17,7 @@ const HeroSection = () => {
                     you copy on your Mac, iPhone, and iPad.</p>
             </div>
             <div className="flex justify-center -mt-8">
-                <button type="button" className="bg-[#0A84FF] hover:bg-[#0069D4] px-10 py-[10px] rounded-full text-white text-lg md:text-xl text-center">Try for free</button>
+                <button type="button" className="bg-[#0A84FF] hover:bg-[#0069D4] active:bg-[#00478F] transition-all duration-150 px-10 py-[10px] rounded-full text-white text-lg md:text-xl text-center">Try for free</button>
             </div>
             <div className="trusted-by-companies flex flex-wrap justify-between w-2/3 md:w-[60%] lg:w-[45%] mx-auto gap-12">
                 <img src={Invaluable} className="w-30 h-6" alt="invaluable utility" />

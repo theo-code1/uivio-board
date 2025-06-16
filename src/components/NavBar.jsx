@@ -159,7 +159,7 @@ const NavBar = () => {
                     <a className='flex items-center' href='#'>Pricing</a>
                 </li>
             </ul>
-            <button className='hidden md:block absolute right-4 top-4 lg:relative lg:top-2 bg-[#0A84FF] text-[14px] px-6 h-10 rounded-full text-white hover:bg-[#0069D4] transition-all duration-300' type='button'>Try for free</button>
+            <button className='hidden md:block absolute right-4 top-4 lg:relative lg:top-2 bg-[#0A84FF] hover:bg-[#0069D4] active:bg-[#00478F] text-[14px] px-6 h-10 rounded-full text-white transition-all duration-150' type='button'>Try for free</button>
         </nav>
     )
 }
