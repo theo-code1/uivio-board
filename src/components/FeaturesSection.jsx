@@ -56,7 +56,7 @@ const FeaturesSection = () => {
                     HeadlineClassName={`md:text-3xl lg:text-4xl`}
                     Headline={featuresInfo[1].Headline}
                     ParaText={featuresInfo[1].Span}
-                    SpanClassName={`text-[16px] md:text-[12px] lg:text-[16px] font-inter-medium font-medium`}
+                    SpanClassName={`text-[16px] md:text-sm lg:text-[16px] font-inter-medium font-medium`}
                     Img={featuresInfo[1].img}
                     ImgClassName={`mb-12 md:mb-24`}
                     />
@@ -67,7 +67,7 @@ const FeaturesSection = () => {
                     HeadlineClassName={`absolute left-6 md:bottom-12 lg:bottom-18 hidden md:flex md:text-3xl lg:text-4xl`}
                     Headline={featuresInfo[2].Headline}
                     ParaText={featuresInfo[2].Span}
-                    SpanClassName={`w-[40%] lg:w-1/3 absolute left-6 md:bottom-3 lg:bottom-5 hidden md:flex md:text-[12px]`}
+                    SpanClassName={`w-[40%] lg:w-1/3 absolute left-6 md:bottom-3 lg:bottom-5 hidden md:flex md:text-sm`}
                     Img={featuresInfo[2].img}
                     ImgClassName={``}
                     />
