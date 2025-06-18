@@ -27,7 +27,32 @@
 }
 
 .headline-gradient{
-    background: linear-gradient(225deg, #EF6414, #FEAB30 80%);
+    background: linear-gradient(315deg, #EF6414, #FEAB30 80%);
     background-clip: text;
     color: transparent;
+}
+
+/* Thin scrollbar styling */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Firefox scrollbar styling */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #c1c1c1 #f1f1f1;
 }

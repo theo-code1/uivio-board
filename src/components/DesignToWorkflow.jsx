@@ -35,7 +35,7 @@ function DesignToWorkflow() {
     ]
 
     return(
-        <section className="bg-[#F5F5F7] max-w-screen h-auto pb-30 font-inter-regular pt-48 flex flex-col gap-44">
+        <section className="bg-[#F5F5F7] w-screen md:max-w-screen h-auto pb-30 font-inter-regular pt-48 flex flex-col gap-44">
             <h1 className="headline-gradient text-4xl md:text-6xl lg:text-7xl w-[90%] translate-x-[5%] md:translate-x-0 md:w-auto font-inter-bold font-bold text-center lg:leading-20">
             Unobtrusive design that <br className="hidden md:flex"/>blends into your workflow
             </h1>
