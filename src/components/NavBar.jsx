@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import uiLogo from '../assets/uivio-logo.webp';
 import Arrow from './icons/Arrow';
 
-const NavBar = () => {
+const NavBar = ({ hamburgerColor = "black" }) => {
     const [hoveredItem, setHoveredItem] = useState(null);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [expandedMobileItem, setExpandedMobileItem] = useState(null);
@@ -41,9 +41,9 @@ const NavBar = () => {
                 aria-label="Toggle menu"
             >
                 <div className="w-6 h-5 relative flex flex-col justify-between">
-                    <span className={`w-full h-0.5 bg-black transform transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-                    <span className={`w-full h-0.5 bg-black transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`}></span>
-                    <span className={`w-full h-0.5 bg-black transform transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+                    <span className={`w-full h-0.5 transform transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`} style={{ backgroundColor: hamburgerColor }}></span>
+                    <span className={`w-full h-0.5 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`} style={{ backgroundColor: hamburgerColor }}></span>
+                    <span className={`w-full h-0.5 transform transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`} style={{ backgroundColor: hamburgerColor }}></span>
                 </div>
             </button>
 

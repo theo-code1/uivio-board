@@ -35,7 +35,7 @@ function DesignToWorkflow() {
     ]
 
     return(
-        <section className="bg-[#F5F5F7] w-screen md:max-w-screen h-auto pb-30 font-inter-regular pt-48 flex flex-col gap-44">
+        <section className="bg-[#F5F5F7] max-w-screen md:max-w-screen h-auto pb-30 font-inter-regular pt-48 flex flex-col gap-44">
             <h1 className="headline-gradient text-4xl md:text-6xl lg:text-7xl w-[90%] translate-x-[5%] md:translate-x-0 md:w-auto font-inter-bold font-bold text-center lg:leading-20">
             Unobtrusive design that <br className="hidden md:flex"/>blends into your workflow
             </h1>
@@ -80,9 +80,9 @@ function DesignToWorkflow() {
                     PaddingTop={`12`}
                     WorkImg={CardsInfo[2].Img}
                 />
-                <div className="bottom-Cards flex w-[90%] md:w-[85%] lg:w-[70%] mx-auto gap-6">
+                <div className="bottom-Cards flex flex-col md:flex-row w-[90%] md:w-[85%] lg:w-[70%] mx-auto gap-6">
                     <DesignCard 
-                        CardClassName={`p-4 md:p-12 lg:p-20 pb-4 md:pb-8 lg:pb-12 flex-col-reverse text-center`}
+                        CardClassName={`p-4 px-8 md:p-12 lg:p-20 pb-4 md:pb-8 lg:pb-12 flex-col-reverse text-center`}
                         Label={CardsInfo[3].Label.map((line, index) => (
                             <span key={index}>
                                 {line}
@@ -101,7 +101,7 @@ function DesignToWorkflow() {
                         ImgClassName={`w-[130px] md:w-[175px] pb-4 md:pb-8 lg:mb-10`}
                         />
                     <DesignCard 
-                        CardClassName={`p-4 md:p-12 lg:p-20 pb-4 md-pb-8 lg:pb-12 flex-col-reverse  text-center`}
+                        CardClassName={`p-4 px-8 md:p-12 lg:p-20 pb-4 md-pb-8 lg:pb-12 flex-col-reverse  text-center`}
                         Label={CardsInfo[4].Label.map((line, index) => (
                             <span key={index}>
                                 {line}
@@ -117,7 +117,7 @@ function DesignToWorkflow() {
                         ))} 
                         headlineClassName={'text-[24px] md:text-[32px] lg:text-[40px]'}
                         WorkImg={CardsInfo[4].Img}
-                        ImgClassName={`w-[120px] md:w-[150px] pb-4 md:pb-8 lg:mb-10`}
+                        ImgClassName={`w-[120px] md:w-[150px] pb-4 md:pb-8 lg:mb-10 block `}
                         />
                     </div>
             </div>
