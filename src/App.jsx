@@ -2,6 +2,7 @@ import React from 'react';
 import HeroSection from "./components/HeroSection";
 import DesignToWorkflow from './components/DesignToWorkflow';
 import FeaturesSection from './components/FeaturesSection';
+import WorkSection from './components/WorkSection';
 
 const App = () => {
   return(
@@ -9,6 +10,7 @@ const App = () => {
       <HeroSection />
       <DesignToWorkflow />
       <FeaturesSection />
+      <WorkSection />
     </div>
   )
 }
