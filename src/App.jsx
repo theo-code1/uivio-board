@@ -40,9 +40,11 @@ const App = () => {
       <HeroSection hamburgerColor={hamburgerColor} />
       <DesignToWorkflow />
       <FeaturesSection />
+
       <div ref={workSectionRef}>
         <WorkSection />
       </div>
+
       <PeopleSays />
     </div>
   )

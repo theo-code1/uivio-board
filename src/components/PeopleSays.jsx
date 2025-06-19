@@ -3,7 +3,7 @@ import PeopleSaysArticle from './PeopleSaysArticle'
 
 const PeopleSays = () => {
 
-    const PeopleIMessagenfo = [
+    const PeopleMessageInfo = [
         {
             Name: 'Alexander Akers',
             Job: 'Senior iOS Engineer Apple',
@@ -55,13 +55,13 @@ const PeopleSays = () => {
     <section className='h-fit max-w-screen bg-black/5 pt-32 flex flex-col gap-24'>
         <h1 className='text-6xl text-black text-center font-inter-bold font-bold'>People everywhere<br />love Paste</h1>
         <div className="people-says-container md:w-full lg:w-4/5 flex columns-3  items-start justify-center flex-wrap gap-5 mx-auto">
-            {PeopleIMessagenfo.map((item, index) => (
+            {PeopleMessageInfo.map((item, index) => (
 
-                <PeopleSaysArticle 
-                    className={index >= 4 ? 'hidden md:block' : ''}
-                    PersonName={item.Name} 
+                <PeopleSaysArticle
+                    // className={index >= 4 ? 'hidden md:block' : ''}
+                    PersonName={item.Name}
                     PersonJob={item.Job}
-                    PersonMessage={item.Message} 
+                    PersonMessage={item.Message}
                     key={index}
                 />
 
