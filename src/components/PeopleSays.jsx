@@ -58,7 +58,7 @@ const PeopleSays = () => {
             {PeopleMessageInfo.map((item, index) => (
 
                 <PeopleSaysArticle
-                    // className={index >= 4 ? 'hidden md:block' : ''}
+                    className={index >= 4 ? 'hidden md:flex' : ''}
                     PersonName={item.Name}
                     PersonJob={item.Job}
                     PersonMessage={item.Message}

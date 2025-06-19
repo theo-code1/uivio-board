@@ -1,4 +1,3 @@
-import React from 'react'
 
 const PeopleSaysArticle = ({ PersonName, PersonJob, PersonMessage, className}) => {
   return (
