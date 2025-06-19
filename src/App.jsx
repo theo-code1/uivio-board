@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import DesignToWorkflow from './components/DesignToWorkflow';
 import FeaturesSection from './components/FeaturesSection';
 import WorkSection from './components/WorkSection';
+import PeopleSays from './components/PeopleSays';
 
 const App = () => {
   const [hamburgerColor, setHamburgerColor] = useState("black");
@@ -18,7 +19,7 @@ const App = () => {
         }
       },
       {
-        threshold: 0.1, // Trigger when 10% of the section is visible
+        threshold: 0.5, // Trigger when 10% of the section is visible
         rootMargin: '-50px 0px 0px 0px' // Start detecting slightly before the section comes into view
       }
     );
@@ -42,6 +43,7 @@ const App = () => {
       <div ref={workSectionRef}>
         <WorkSection />
       </div>
+      <PeopleSays />
     </div>
   )
 }
