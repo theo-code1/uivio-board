@@ -52,7 +52,7 @@ const PeopleSays = () => {
     ]
 
   return (
-    <section className='h-fit max-w-screen bg-black/5 pt-32 flex flex-col gap-24'>
+    <section className='h-fit max-w-screen bg-black/5 pt-32 flex flex-col gap-24 overflow-hidden'>
         <h1 className='text-6xl text-black text-center font-inter-bold font-bold'>People everywhere<br />love Paste</h1>
         <div className="people-says-container md:w-full lg:w-4/5 flex columns-3  items-start justify-center flex-wrap gap-5 mx-auto">
             {PeopleMessageInfo.map((item, index) => (
