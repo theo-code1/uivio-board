@@ -54,7 +54,7 @@ const PeopleSays = () => {
   return (
     <section className='h-fit max-w-screen bg-black/5 pt-32 flex flex-col gap-24 overflow-hidden'>
         <h1 className='text-6xl text-black text-center font-inter-bold font-bold'>People everywhere<br />love Paste</h1>
-        <div className="people-says-container md:w-full lg:w-4/5 flex columns-3  items-start justify-center flex-wrap gap-5 mx-auto">
+        <div className="people-says-container md:w-full lg:w-4/5 flex h-[100vh] column-count-3 column-width-[20dvw] items-start justify-center flex-wrap gap-5 mx-auto">
             {PeopleMessageInfo.map((item, index) => (
 
                 <PeopleSaysArticle
@@ -67,8 +67,28 @@ const PeopleSays = () => {
 
             ))}
         </div>
+        <DivsTest />
     </section>
   )
 }
 
 export default PeopleSays
+
+export const DivsTest = () => {
+    return (
+        <div className='divs-test flex columns-4 gap-8 flex-wrap justify-center items-start py-32 '>
+            <div className='bg-red-500 h-60 w-80'>1</div>
+            <div className='bg-blue-500 h-40 w-80'>2</div>
+            <div className='bg-green-500 h-40 w-80'>3</div>
+            <div className='bg-yellow-500 h-30 w-80'>4</div>
+            <div className='bg-red-500 h-30 w-80'>1</div>
+            <div className='bg-blue-500 h-50 w-80'>2</div>
+            <div className='bg-green-500 h-60 w-80'>3</div>
+            <div className='bg-yellow-500 h-80 w-80'>4</div>
+            <div className='bg-red-500 h-90 w-80'>1</div>
+            <div className='bg-blue-500 h-60 w-80'>2</div>
+            <div className='bg-green-500 h-60 w-80'>3</div>
+            <div className='bg-yellow-500 h-60 w-80'>4</div>
+        </div>
+    )
+}
