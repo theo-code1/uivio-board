@@ -1,5 +1,13 @@
-import React from 'react'
 import PeopleSaysArticle from './PeopleSaysArticle'
+import Person1 from '../assets/person1.jpg'
+// import Person2 from '../assets/person2.jpg'
+// import Person3 from '../assets/person3.jpg'
+// import Person4 from '../assets/person4.jpg'
+// import Person5 from '../assets/person5.jpg'
+// import Person6 from '../assets/person6.jpg'
+// import Person7 from '../assets/person7.jpg'
+// import Person8 from '../assets/person8.jpg'
+// import Person9 from '../assets/person9.jpg'
 
 const PeopleSays = () => {
 
@@ -50,45 +58,29 @@ const PeopleSays = () => {
             Message: `@paste_app is my new favorite Mac App! I don't know how i went so long without it!`
         },
     ]
+    
 
   return (
     <section className='h-fit max-w-screen bg-black/5 pt-32 flex flex-col gap-24 overflow-hidden'>
         <h1 className='text-6xl text-black text-center font-inter-bold font-bold'>People everywhere<br />love Paste</h1>
-        <div className="people-says-container md:w-full lg:w-4/5 flex h-[100vh] column-count-3 column-width-[20dvw] items-start justify-center flex-wrap gap-5 mx-auto">
-            {PeopleMessageInfo.map((item, index) => (
+        <div className="people-says-container md:w-full lg:w-3/5 columns-3 gap-4 items-start justify-center flex-wrap mx-auto">
+            {PeopleMessageInfo.map((item, index) => {
 
-                <PeopleSaysArticle
-                    className={index >= 4 ? 'hidden md:flex' : ''}
+                // const personImgIndex = `Person${index + 1}`;
+
+                return <PeopleSaysArticle
+                    className={`${index >= 4 ? 'hidden md:flex' : ''} break-inside-avoid-column mb-4 `}
+                    PersonImg={Person1}
                     PersonName={item.Name}
                     PersonJob={item.Job}
                     PersonMessage={item.Message}
                     key={index}
                 />
 
-            ))}
+            })}
         </div>
-        <DivsTest />
     </section>
   )
 }
 
 export default PeopleSays
-
-export const DivsTest = () => {
-    return (
-        <div className='divs-test flex columns-4 gap-8 flex-wrap justify-center items-start py-32 '>
-            <div className='bg-red-500 h-60 w-80'>1</div>
-            <div className='bg-blue-500 h-40 w-80'>2</div>
-            <div className='bg-green-500 h-40 w-80'>3</div>
-            <div className='bg-yellow-500 h-30 w-80'>4</div>
-            <div className='bg-red-500 h-30 w-80'>1</div>
-            <div className='bg-blue-500 h-50 w-80'>2</div>
-            <div className='bg-green-500 h-60 w-80'>3</div>
-            <div className='bg-yellow-500 h-80 w-80'>4</div>
-            <div className='bg-red-500 h-90 w-80'>1</div>
-            <div className='bg-blue-500 h-60 w-80'>2</div>
-            <div className='bg-green-500 h-60 w-80'>3</div>
-            <div className='bg-yellow-500 h-60 w-80'>4</div>
-        </div>
-    )
-}

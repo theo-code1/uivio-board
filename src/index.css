@@ -59,14 +59,5 @@
 }
 
 .people-says-container{
-    display: flex;
-    columns: 3 400px;
-    gap: 1em;
-}
-.divs-test{
-    display: flex;
-    columns: 4 300px;
-    gap: 1em;
-    background: #000;
-    color: white
+    /* column-gap: 0.25rem; */
 }

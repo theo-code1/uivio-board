@@ -116,14 +116,14 @@ const NavBar = ({ hamburgerColor = "black" }) => {
                             {menuItems.useCases.title} <Arrow />
                         </a>
                     </li>
-                    <div className='hidden group-hover:flex flex-col backdrop-blur-sm text-center transition-all duration-200 rounded-lg absolute -bottom-40 left-1/2 -translate-x-1/2 w-32 h-40 border border-black/40'>
+                    <div className='hidden group-hover:flex flex-col bg-white/99 shadow-2xl shadow-black/25 text-center transition-all duration-200 rounded-md absolute -bottom-40 left-1/2 -translate-x-1/2 w-32 h-40 '>
                          {hoveredItem === 'useCases' && menuItems.useCases.options.map((option, index) => (
                             <React.Fragment key={index}>
                                 <div className="p-2 py-4 hover:bg-[#0A84FF]/10 rounded-lg cursor-pointer">
                                     {option}
                                 </div>
                                 {index < menuItems.resources.options.length - 1 && (
-                                    <hr className='opacity-30 w-2/3 mx-auto'/>
+                                    <hr className='opacity-20 w-2/3 mx-auto'/>
                                 )}
                             </React.Fragment>
                         ))}
@@ -139,14 +139,14 @@ const NavBar = ({ hamburgerColor = "black" }) => {
                             {menuItems.resources.title} <Arrow />
                         </a>
                     </li>
-                    <div className='hidden group-hover:flex flex-col backdrop-blur-sm font-inter-regular text-center rounded-lg transition-all duration-200 absolute -bottom-40 left-1/2 -translate-x-1/2 w-32 h-40 border border-black/40'>
+                    <div className='hidden group-hover:flex flex-col bg-white/99 shadow-2xl shadow-black/25 font-inter-regular text-center rounded-lg transition-all duration-200 absolute -bottom-40 left-1/2 -translate-x-1/2 w-32 h-40 '>
                         {hoveredItem === 'resources' && menuItems.resources.options.map((option, index) => (
                             <React.Fragment key={index}>
                                 <div className="p-2 py-4 hover:bg-[#0A84FF]/10 rounded-lg cursor-pointer">
                                     {option}
                                 </div>
                                 {index < menuItems.resources.options.length - 1 && (
-                                    <hr className='opacity-30 w-2/3 mx-auto'/>
+                                    <hr className='opacity-20 w-2/3 mx-auto'/>
                                 )}
                             </React.Fragment>
                         ))}
