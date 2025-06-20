@@ -19,18 +19,19 @@ const App = () => {
         }
       },
       {
-        threshold: 0.5, // Trigger when 10% of the section is visible
-        rootMargin: '-50px 0px 0px 0px' // Start detecting slightly before the section comes into view
+        threshold: 1, // Trigger when 10% of the section is visible
+        rootMargin: '0px 0px 0px 0px' // Start detecting slightly before the section comes into view
       }
     );
 
-    if (workSectionRef.current) {
-      observer.observe(workSectionRef.current);
+    const sectionNode = workSectionRef.current;
+    if (sectionNode) {
+      observer.observe(sectionNode);
     }
 
     return () => {
-      if (workSectionRef.current) {
-        observer.unobserve(workSectionRef.current);
+      if (sectionNode) {
+        observer.unobserve(sectionNode);
       }
     };
   }, []);
