@@ -1,11 +1,9 @@
-import { useState } from 'react'
 
-const PricingCard = ({ NavClassName, PaymentIcon, PaymentName, PaymentDescrip, PriceDescrip, MethodsVisibility, FeaturesVisibility,  Price, TrialButton, ButtonIcon, ButtonClassName }) => {
-  
-  const [selectedDuration, setSelectedDuration] = useState('Monthly');
+const PricingCard = ({ setSelectedDuration, selectedDuration, NavClassName, PaymentIcon, PaymentName, PaymentDescrip, PriceDescrip, MethodsVisibility, FeaturesVisibility,  Price, TrialButton, ButtonIcon, ButtonClassName }) => {
+
 
   return (
-    <nav className={`flex flex-col gap-6 items-center border rounded-4xl py-10 text-white text-center font-inter-regular ${NavClassName}`}>
+    <nav className={`relative flex flex-col gap-6 items-center border rounded-4xl py-10 text-white text-center font-inter-regular ${NavClassName}`}>
         <img src={PaymentIcon} alt="Payment Icon" className='w-10'/>
 
         <div className="header flex flex-col gap-2">
@@ -14,9 +12,9 @@ const PricingCard = ({ NavClassName, PaymentIcon, PaymentName, PaymentDescrip, P
         </div>
         <div className={`methodes ${MethodsVisibility} flex-col gap-8`}>
             <div className="time flex bg-white/20 py-[3px] px-[3px] w-fit rounded-full">
-                <button href="#" onClick={() => setSelectedDuration('Monthly')} className={` text-sm py-1 px-5 rounded-full transition-all duration-150 ${selectedDuration === 'Monthly' ? 'text-[#2997FF] bg-white' : 'bg-transparent text-white'}`}>Monthly</button>
-                <button href="#" onClick={() => setSelectedDuration('Annual')} className={` text-sm py-1 px-5 rounded-full transition-all duration-150 ${selectedDuration === 'Annual' ? 'text-[#2997FF] bg-white' : 'bg-transparent text-white'}`}>Annual</button>
-                <button href="#" onClick={() => setSelectedDuration('Lifetime')} className={` text-sm py-1 px-5 rounded-full transition-all duration-150 ${selectedDuration === 'Lifetime' ? 'text-[#2997FF] bg-white' : 'bg-transparent text-white'}`}>Lifetime</button>
+                <button onClick={() => setSelectedDuration('Monthly')} className={` text-sm py-1 px-5 rounded-full transition-all duration-150 ${selectedDuration === 'Monthly' ? 'text-[#2997FF] bg-white' : 'bg-transparent text-white'}`}>Monthly</button>
+                <button onClick={() => setSelectedDuration('Annual')} className={` text-sm py-1 px-5 rounded-full transition-all duration-150 ${selectedDuration === 'Annual' ? 'text-[#2997FF] bg-white' : 'bg-transparent text-white'}`}>Annual</button>
+                <button onClick={() => setSelectedDuration('Lifetime')} className={` text-sm py-1 px-5 rounded-full transition-all duration-150 ${selectedDuration === 'Lifetime' ? 'text-[#2997FF] bg-white' : 'bg-transparent text-white'}`}>Lifetime</button>
             </div>
             <div className="select-duration flex flex-col gap-1">
                 <h2 className='text-4xl font-bold'>{Price}</h2>
