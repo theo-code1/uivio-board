@@ -4,6 +4,7 @@ import DesignToWorkflow from './components/DesignToWorkflow';
 import FeaturesSection from './components/FeaturesSection';
 import WorkSection from './components/WorkSection';
 import PeopleSays from './components/PeopleSays';
+import PricingSection from './components/PricingSection';
 
 const App = () => {
   const [hamburgerColor, setHamburgerColor] = useState("black");
@@ -47,6 +48,7 @@ const App = () => {
       </div>
 
       <PeopleSays />
+      <PricingSection />
     </div>
   )
 }
