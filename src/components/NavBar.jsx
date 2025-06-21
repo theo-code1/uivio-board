@@ -10,7 +10,7 @@ const NavBar = ({ hamburgerColor = "black" }) => {
     const menuItems = {
         useCases: {
             title: 'Use Cases',
-            options: ['case 01', 'case 02', 'case 03']
+            options: ['Everyone', 'Developers', 'Designers']
         },
         resources: {
             title: 'Resources',
@@ -28,8 +28,8 @@ const NavBar = ({ hamburgerColor = "black" }) => {
     };
 
     return(
-        <nav className="w-[70dvw] flex justify-between items-center mx-auto font-inter-medium z-40">
-            <a href='#hero-section' className="brand-logo absolute left-4 top-3 lg:relative lg:top-2 flex items-center gap-2">
+        <nav className="w-[70dvw] flex justify-between items-center mx-auto font-inter-medium z-40 py-4">
+            <a href='#hero-section' className="brand-logo absolute left-4 top-3 lg:relative lg:top-0 flex items-center gap-2">
                 <img className='size-10 md:size-12 select-none' src={uiLogo} alt="Uivio Logo"  draggable='false' />
                 <h1 className='text-xl md:text-2xl font-inter-semibold font-semibold'>UIvio</h1>
             </a>
@@ -53,9 +53,9 @@ const NavBar = ({ hamburgerColor = "black" }) => {
 
             {/* Mobile Menu */}
             <div className={`fixed top-0 right-0 h-full w-64 bg-white transform transition-transform duration-300 ease-in-out md:hidden ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-                <ul className='flex flex-col p-6 gap-6 font-inter-regular font-[500] text-[14px] mt-10'>
+                <ul className='flex flex-col p-6 gap-6 font-inter-regular font-[500] text-[14px] mt-12'>
                     <div className="li relative">
-                        <li className='relative text-black/80 hover:text-black transition-all duration-150'>
+                        <li className='relative text-black hover:text-black/50 transition-all duration-150'>
                             <button 
                                 className='flex items-center gap-1 w-full text-left'
                                 onClick={() => toggleMobileItem('useCases')}
@@ -73,7 +73,7 @@ const NavBar = ({ hamburgerColor = "black" }) => {
                         </li>
                     </div>
                     <div className="li relative">
-                        <li className='relative text-black/80 hover:text-black transition-all duration-150'>
+                        <li className='relative text-black hover:text-black/50 transition-all duration-150'>
                             <button 
                                 className='flex items-center gap-1 w-full text-left'
                                 onClick={() => toggleMobileItem('resources')}
@@ -90,10 +90,10 @@ const NavBar = ({ hamburgerColor = "black" }) => {
                             </div>
                         </li>
                     </div>
-                    <li className='relative text-black/80 hover:text-black transition-all duration-150'>
+                    <li className='relative text-black hover:text-black/50 transition-all duration-150'>
                         <a className='flex items-center' href='#'>Updates</a>
                     </li>
-                    <li className='relative text-black/80 hover:text-black transition-all duration-150'>
+                    <li className='relative text-black hover:text-black/50 transition-all duration-150'>
                         <a className='flex items-center' href='#'>Pricing</a>
                     </li>
                     <li className='mt-4'>
@@ -105,10 +105,10 @@ const NavBar = ({ hamburgerColor = "black" }) => {
             </div>
 
             {/* Desktop Menu */}
-            <ul className='hidden md:flex items-center gap-8 absolute top-6 left-1/2 -translate-x-1/2 lg:relative lg:left-0 lg:top-2 lg:translate-x-0 font-inter-regular font-[500] text-[14px]'>
+            <ul className='hidden md:flex items-center gap-8 absolute top-6 left-1/2 -translate-x-1/2 lg:relative lg:left-0 lg:top-0 lg:translate-x-0 font-inter-regular font-[500] text-[14px]'>
                 <div className="li relative group">
                     <li 
-                        className='relative text-black/80 hover:text-black transition-all duration-150 group'
+                        className='relative text-black hover:text-black/50 transition-all duration-150 group'
                         onMouseEnter={() => setHoveredItem('useCases')}
                         onMouseLeave={() => setHoveredItem('useCases')}
                     >
@@ -116,22 +116,19 @@ const NavBar = ({ hamburgerColor = "black" }) => {
                             {menuItems.useCases.title} <Arrow />
                         </a>
                     </li>
-                    <div className='hidden group-hover:flex flex-col bg-white/99 shadow-2xl shadow-black/25 text-center transition-all duration-200 rounded-md absolute -bottom-40 left-1/2 -translate-x-1/2 w-32 h-40 '>
+                    <div className='hidden group-hover:flex flex-col justify-center gap-2 bg-white/95 shadow-2xl shadow-black/25 text-center transition-all duration-200 rounded-md absolute -bottom-36 left-1/2 -translate-x-1/2 w-32 h-36 '>
                          {hoveredItem === 'useCases' && menuItems.useCases.options.map((option, index) => (
                             <React.Fragment key={index}>
-                                <div className="p-2 py-4 hover:bg-[#0A84FF]/10 rounded-lg cursor-pointer">
-                                    {option}
+                                <div className="p-2 py- rounded-lg cursor-pointer">
+                                    <a href="#" className='text-black hover:text-black/50 py-4'>{option}</a>
                                 </div>
-                                {index < menuItems.resources.options.length - 1 && (
-                                    <hr className='opacity-20 w-2/3 mx-auto'/>
-                                )}
                             </React.Fragment>
                         ))}
                     </div>
                 </div>
                 <div className="li relative group">
                     <li 
-                        className='relative text-black/80 hover:text-black transition-all duration-150 group'
+                        className='relative text-black hover:text-black/50 transition-all duration-150 group'
                         onMouseEnter={() => setHoveredItem('resources')}
                         onMouseLeave={() => setHoveredItem('resources')}
                     >
@@ -139,27 +136,24 @@ const NavBar = ({ hamburgerColor = "black" }) => {
                             {menuItems.resources.title} <Arrow />
                         </a>
                     </li>
-                    <div className='hidden group-hover:flex flex-col bg-white/99 shadow-2xl shadow-black/25 font-inter-regular text-center rounded-lg transition-all duration-200 absolute -bottom-40 left-1/2 -translate-x-1/2 w-32 h-40 '>
+                    <div className='hidden group-hover:flex flex-col justify-center gap-2 bg-white/95 shadow-2xl shadow-black/25 font-inter-regular text-center rounded-lg transition-all duration-200 absolute -bottom-36 left-1/2 -translate-x-1/2 w-32 h-36 '>
                         {hoveredItem === 'resources' && menuItems.resources.options.map((option, index) => (
                             <React.Fragment key={index}>
-                                <div className="p-2 py-4 hover:bg-[#0A84FF]/10 rounded-lg cursor-pointer">
-                                    {option}
+                                <div className="p-2 rounded-lg cursor-pointer">
+                                    <a href="#" className='text-black hover:text-black/50 py-4'>{option} </a>
                                 </div>
-                                {index < menuItems.resources.options.length - 1 && (
-                                    <hr className='opacity-20 w-2/3 mx-auto'/>
-                                )}
                             </React.Fragment>
                         ))}
                     </div>
                 </div>
-                <li className='relative text-black/80 hover:text-black transition-all duration-150'>
+                <li className='relative text-black hover:text-black/50 transition-all duration-150'>
                     <a className='flex items-center' href='#'>Updates</a>
                 </li>
-                <li className='relative text-black/80 hover:text-black transition-all duration-150'>
+                <li className='relative text-black hover:text-black/50 transition-all duration-150'>
                     <a className='flex items-center' href='#'>Pricing</a>
                 </li>
             </ul>
-            <button className='hidden md:block absolute right-4 top-4 lg:relative lg:top-2 bg-[#0A84FF] hover:bg-[#0069D4] active:bg-[#00478F] text-[14px] px-6 h-10 rounded-full text-white transition-all duration-150' type='button'>Try for free</button>
+            <button className='hidden md:block absolute right-4 top-4 lg:relative lg:top-0 bg-[#0A84FF] hover:bg-[#0069D4] active:bg-[#00478F] text-[14px] px-6 h-10 rounded-full text-white transition-all duration-150' type='button'>Try for free</button>
         </nav>
     )
 }

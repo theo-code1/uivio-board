@@ -1,12 +1,16 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: "inter-medium";
-    src: url('../src/assets/fonts/Inter-Medium.ttf');
+    font-family: "inter-light";
+    src: url('../src/assets/fonts/Inter-Light.ttf');
 }
 @font-face {
     font-family: "inter-regular";
     src: url('../src/assets/fonts/Inter-Regular.ttf');
+}
+@font-face {
+    font-family: "inter-medium";
+    src: url('../src/assets/fonts/Inter-Medium.ttf');
 }
 @font-face {
     font-family: "inter-semibold";
@@ -16,13 +20,15 @@
     font-family: "inter-bold";
     src: url('../src/assets/fonts/Inter-Bold.ttf');
 }
-@theme{
+:root{
+    --font-inter-light: "inter-light", sans-serif;
+    --font-inter-regular: "inter-regular", sans-serif;
     --font-inter-medium: "inter", sans-serif;
     --font-inter-bold: "inter-bold", sans-serif;
-    --font-inter-regular: "inter-regular", sans-serif;
     --font-inter-semibold: "inter-semibold", sans-serif;
     --color-primary-blue: '#0A84FF';
     --color-secondary-blue: '#0069D4';
+    --color-accent-blue: '#2997FF';
     --color-gray-bg: '#F5F5F7';
     --color-dark-gray: '#ABABB0'
 }
