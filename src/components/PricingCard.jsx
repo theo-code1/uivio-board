@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const PricingCard = ({ NavClassName, PaymentIcon, PaymentName, PaymentDescrip, PriceDescrip, Price, TrialButton, ButtonIcon }) => {
+const PricingCard = ({ NavClassName, PaymentIcon, PaymentName, PaymentDescrip, PriceDescrip, MethodsVisibility, FeaturesVisibility,  Price, TrialButton, ButtonIcon, ButtonClassName }) => {
   
   const [selectedDuration, setSelectedDuration] = useState('Monthly');
 
@@ -12,7 +12,7 @@ const PricingCard = ({ NavClassName, PaymentIcon, PaymentName, PaymentDescrip, P
           <h2 className="payment-name text-4xl font-inter-bold font-bold">{PaymentName}</h2>
           <p className="payment-description text-center font-light text-white/80 font-inter-regular">{PaymentDescrip}</p>
         </div>
-        <div className="methodes flex flex-col gap-8">
+        <div className={`methodes ${MethodsVisibility} flex-col gap-8`}>
             <div className="time flex bg-white/20 py-[3px] px-[3px] w-fit rounded-full">
                 <button href="#" onClick={() => setSelectedDuration('Monthly')} className={` text-sm py-1 px-5 rounded-full transition-all duration-150 ${selectedDuration === 'Monthly' ? 'text-[#2997FF] bg-white' : 'bg-transparent text-white'}`}>Monthly</button>
                 <button href="#" onClick={() => setSelectedDuration('Annual')} className={` text-sm py-1 px-5 rounded-full transition-all duration-150 ${selectedDuration === 'Annual' ? 'text-[#2997FF] bg-white' : 'bg-transparent text-white'}`}>Annual</button>
@@ -23,8 +23,13 @@ const PricingCard = ({ NavClassName, PaymentIcon, PaymentName, PaymentDescrip, P
                 <span className='text-lg text-white/80'>{PriceDescrip}</span>
             </div>
         </div>
-        <button className="try-for-free flex gap-2 items-center justify-center text-[#2997FF] py-[10px] px-8 mt-8 mb-2 font-inter-medium font-medium bg-white rounded-full">
-          <img src={ButtonIcon || PaymentIcon} alt='Apple Logo' className='w-6 brightness-95'/>
+        <div className={`features-pricing ${FeaturesVisibility} flex-col gap-2`}>
+          <hr className='text-white/20 w-2/5 mx-auto mb-6'/>
+          <h2 className='text-lg text-white font-medium'>All-access pass to curated Mac and iOS apps</h2>
+          <h3 className='text-[16px] text-white/50 font-medium'>Starting from $8.99/month</h3>
+        </div>
+        <button className={`try-for-free flex gap-2 items-center justify-center py-[10px] px-8 font-inter-medium font-medium  rounded-full ${ButtonClassName}`}>
+          <img src={ButtonIcon} alt='Apple Logo' className='w-4 '/>
           {TrialButton}
         </button>
     </nav>
