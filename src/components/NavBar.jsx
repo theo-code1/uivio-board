@@ -28,7 +28,7 @@ const NavBar = ({ hamburgerColor = "black" }) => {
     };
 
     return(
-        <nav className="w-[70dvw] flex justify-between items-center mx-auto font-inter-medium z-40 py-4">
+        <nav className="w-screen flex justify-between items-center mx-auto font-inter-medium z-40 py-4 px-[20%] border-b border-b-black/10 bg-white relative">
             <a href='#hero-section' className="brand-logo absolute left-4 top-3 lg:relative lg:top-0 flex items-center gap-2">
                 <img className='size-10 md:size-12 select-none' src={uiLogo} alt="Uivio Logo"  draggable='false' />
                 <h1 className='text-xl md:text-2xl font-inter-semibold font-semibold'>UIvio</h1>
@@ -55,7 +55,7 @@ const NavBar = ({ hamburgerColor = "black" }) => {
             <div className={`fixed top-0 right-0 h-full w-64 bg-white transform transition-transform duration-300 ease-in-out md:hidden ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <ul className='flex flex-col p-6 gap-6 font-inter-regular font-[500] text-[14px] mt-12'>
                     <div className="li relative">
-                        <li className='relative text-black hover:text-black/50 transition-all duration-150'>
+                        <li className='relative text-black text-[16px] hover:text-black/50 transition-all duration-150'>
                             <button 
                                 className='flex items-center gap-1 w-full text-left'
                                 onClick={() => toggleMobileItem('useCases')}
@@ -73,7 +73,7 @@ const NavBar = ({ hamburgerColor = "black" }) => {
                         </li>
                     </div>
                     <div className="li relative">
-                        <li className='relative text-black hover:text-black/50 transition-all duration-150'>
+                        <li className='relative text-black text-[16px] hover:text-black/50 transition-all duration-150'>
                             <button 
                                 className='flex items-center gap-1 w-full text-left'
                                 onClick={() => toggleMobileItem('resources')}
@@ -146,10 +146,10 @@ const NavBar = ({ hamburgerColor = "black" }) => {
                         ))}
                     </div>
                 </div>
-                <li className='relative text-black hover:text-black/50 transition-all duration-150'>
+                <li className='relative text-black text-[16px] hover:text-black/50 transition-all duration-150'>
                     <a className='flex items-center' href='#'>Updates</a>
                 </li>
-                <li className='relative text-black hover:text-black/50 transition-all duration-150'>
+                <li className='relative text-black text-[16px] hover:text-black/50 transition-all duration-150'>
                     <a className='flex items-center' href='#'>Pricing</a>
                 </li>
             </ul>
