@@ -27,7 +27,7 @@ const PricingCard = ({ setSelectedDuration, selectedDuration, NavClassName, Paym
           <h3 className='text-[16px] text-white/50 font-medium'>Starting from $8.99/month</h3>
         </div>
         <button className={`try-for-free flex gap-2 items-center justify-center py-[10px] px-8 font-inter-medium font-medium  rounded-full ${ButtonClassName}`}>
-          <img src={ButtonIcon} alt='Apple Logo' className='w-4 '/>
+          <img src={ButtonIcon} alt='Apple Logo' className='w-4' draggable='false' />
           {TrialButton}
         </button>
     </nav>

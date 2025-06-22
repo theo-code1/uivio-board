@@ -43,11 +43,11 @@ const PricingSection = () => {
   ]
 
   return (
-    <section className='max-w-screen h-[120dvh] relative -top-10 flex flex-col items-center gap-24 bg-white font-inter-regular'>
-        <h1 className='text-6xl text-center pt-32 font-inter-bold font-bold'>Ready to up your <br /> clipboard game?</h1>
-        <div className="pricing-methodes flex gap-4">
+    <section className='max-w-screen h-fit relative -top-12 flex flex-col items-center gap-24 px-2 pt-32 bg-white font-inter-regular'>
+        <h1 className='text-6xl text-center font-inter-bold font-bold'>Ready to up your <br className='hidden md:flex'/> clipboard game?</h1>
+        <div className="pricing-methodes flex flex-col md:flex-row gap-4 md:px=8">
           <PricingCard 
-              NavClassName={`bg-[#2997FF] w-[36dvw] px-28`}
+              NavClassName={`bg-[#2997FF] md:[50dvw] lg:w-[36dvw] px-8 md:px-20 lg:px-28`}
               MethodsVisibility={'flex '}
               FeaturesVisibility={'hidden'}
               PaymentIcon={pricingInfo[0].PaymentIcon}
@@ -59,12 +59,12 @@ const PricingSection = () => {
 
               TrialButton={pricingInfo[0].textButton}
               ButtonIcon={PersonalBlueIcon}
-              ButtonClassName={`text-[#2997FF] bg-white absolute bottom-12 left-1/2 -translate-x-1/2 `}
+              ButtonClassName={`text-[#2997FF] bg-white hover:brightness-90 md:mt-6 transition-all duration-150 ${selectedDuration === 'Monthly' ? 'mt-10' : 'mt-4'} `}
               setSelectedDuration={setSelectedDuration}
               selectedDuration={selectedDuration}
             />
           <PricingCard 
-              NavClassName={`bg-[#595667] w-[20dvw] px-10`}
+              NavClassName={`bg-[#595667] md:w-[40dvw] lg:w-[20dvw] md:px-4 lg:px-10`}
               FeaturesVisibility={'flex'}
               MethodsVisibility={'hidden'}
               PaymentIcon={pricingInfo[1].PaymentIcon}
@@ -72,12 +72,12 @@ const PricingSection = () => {
               PaymentDescrip={pricingInfo[1].PaymentDescrip}
               TrialButton={pricingInfo[1].textButton}
               ButtonIcon={Setapp}
-              ButtonClassName={`bg-white/20 text-white mt-10 `}
+              ButtonClassName={`bg-white/20 text-white md:mt-6 lg:mt-10 hover:brightness-80 transition- duration-100`}
               setSelectedDuration={setSelectedDuration}
               selectedDuration={selectedDuration}
             />
             </div>
-            <h2 className='text-[16px] text-black/30'>Prices are in USD excluding VAT and can vary across different countries and regions.</h2>
+            <h2 className='text-[16px] text-black/30 '>Prices are in USD excluding VAT and can vary across different countries and regions.</h2>
     </section>
   )
 }
