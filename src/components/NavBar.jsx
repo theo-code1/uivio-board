@@ -28,7 +28,7 @@ const NavBar = ({ hamburgerColor = "black" }) => {
     };
 
     return(
-        <nav className="w-screen flex justify-between items-center mx-auto font-inter-medium z-40 py-4 px-[20%] border-b border-b-black/10 bg-white relative">
+        <nav className="w-screen flex justify-between items-center mx-auto font-inter-medium z-40 py-4 px-[20%] sticky top-0 border-0 lg:border-b border-b-black/10 bg-white ">
             <a href='#hero-section' className="brand-logo absolute left-4 top-3 lg:relative lg:top-0 flex items-center gap-2">
                 <img className='size-10 md:size-12 select-none' src={uiLogo} alt="Uivio Logo"  draggable='false' />
                 <h1 className='text-xl md:text-2xl font-inter-semibold font-semibold'>UIvio</h1>

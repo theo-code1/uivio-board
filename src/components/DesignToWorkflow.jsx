@@ -43,7 +43,7 @@ function DesignToWorkflow() {
                 <DesignCard 
                     Label={CardsInfo[0].Label} Color={'text-green-500'} 
                     Headline={CardsInfo[0].Headline.map((line, index) => (
-                        <h1 key={index}>
+                        <h1 key={index} className={`text-center text-3xl md:text-5xl font-inter-semibold font-semibold `}>
                             {line}
                             <br />
                         </h1>
@@ -91,12 +91,11 @@ function DesignToWorkflow() {
                         ))}  
                         Color={'text-black'} 
                         Headline={CardsInfo[3].Headline.map((line, index) => (
-                            <h1 key={index}>
+                            <h1 key={index} className={`text-center text-3xl md:text-5xl font-inter-semibold font-semibold text-[24px] md:text-[32px] lg:text-[40px]`}>
                                 {line}
                                 <br />
                             </h1>
                         ))} 
-                        headlineClassName={`text-[24px] md:text-[32px] lg:text-[40px]`}
                         WorkImg={CardsInfo[3].Img}
                         ImgClassName={`w-[130px] md:w-[175px] pb-4 md:pb-8 lg:mb-10`}
                         />
@@ -110,12 +109,11 @@ function DesignToWorkflow() {
                         ))} 
                         Color={'text-black'} 
                         Headline={CardsInfo[4].Headline.map((line, index) => (
-                            <h1 key={index}>
+                            <h1 key={index} className={`text-center text-3xl md:text-5xl font-inter-semibold font-semibold text-[24px] md:text-[32px] lg:text-[40px]'`}>
                                 {line}
                                 <br />
                             </h1>
                         ))} 
-                        headlineClassName={'text-[24px] md:text-[32px] lg:text-[40px]'}
                         WorkImg={CardsInfo[4].Img}
                         ImgClassName={`w-[120px] md:w-[150px] pb-4 md:pb-8 lg:mb-10 block `}
                         />
