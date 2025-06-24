@@ -5,6 +5,7 @@ import FeaturesSection from './components/FeaturesSection';
 import WorkSection from './components/WorkSection';
 import PeopleSays from './components/PeopleSays';
 import PricingSection from './components/PricingSection';
+import Footer from './components/Footer';
 
 const App = () => {
   const [hamburgerColor, setHamburgerColor] = useState("black");
@@ -38,7 +39,7 @@ const App = () => {
   }, []);
 
   return(
-    <div className="max-w-screen h-auto bg-white ">
+    <div className="max-w-screen h-auto bg-white overflow-x-hidden">
       <HeroSection hamburgerColor={hamburgerColor} />
       <DesignToWorkflow />
       <FeaturesSection />
@@ -49,6 +50,7 @@ const App = () => {
 
       <PeopleSays />
       <PricingSection />
+      <Footer />
     </div>
   )
 }
