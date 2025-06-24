@@ -1,4 +1,6 @@
-import React from 'react'
+import UIvioWhiteLogo from '../assets/UIvio-white-logo.webp'
+import Facebook from './icons/Facebook.svg';
+import Twitter from './icons/Xtwitter.svg';
 
 const Footer = () => {
     const ListHeaderClassName =' text-lg font-semibold mb-4';
@@ -6,8 +8,8 @@ const Footer = () => {
 
   return (
     <footer className='h-[40dvh] max-w-screen flex flex-col items-center py-12 text-white bg-black'>
-        <div className="top-rows flex gap-24 text-start border-white border w-fit">
-            <h1 className="1st-row">Logo</h1>
+        <div className="top-rows flex gap-24 text-start w-fit">
+            <img src={UIvioWhiteLogo} alt="UIvio white Logo" className='h-14 opacity-70'/>
             <ul className="2nd-row">
                 <li className={ListHeaderClassName}>Paste</li>
                 <li className={ListItemClassName}>Try for free</li>
@@ -33,7 +35,10 @@ const Footer = () => {
             </ul>
             <div className="5th-row">
                 <h3 className={ListHeaderClassName}>Follow us</h3>
-                X F M
+                <div className="social-media flex gap-4">
+                    <img src={Twitter} alt="X Logo" className='opacity-70 hover:opacity-85 transition-all duration-150'/>
+                    <img src={Facebook} alt="Facebook Logo" className='opacity-70 hover:opacity-85 transition-all duration-150'/>
+                </div>
             </div>
 
         </div>
