@@ -3,12 +3,12 @@ const PricingCard = ({ setSelectedDuration, selectedDuration, NavClassName, Paym
 
 
   return (
-    <nav className={`relative flex flex-col gap-6 items-center border rounded-4xl py-10 text-white text-center font-inter-regular ${NavClassName}`}>
+    <nav className={`relative flex flex-col gap-6 items-center border rounded-4xl py-10 text-white text-center font-inter ${NavClassName}`}>
         <img src={PaymentIcon} alt="Payment Icon" className='w-10'/>
 
         <div className="header flex flex-col gap-2">
-          <h2 className="payment-name text-4xl font-inter-bold font-bold">{PaymentName}</h2>
-          <p className="payment-description text-center font-light text-white/80 font-inter-regular">{PaymentDescrip}</p>
+          <h2 className="payment-name text-4xl font-inter font-bold">{PaymentName}</h2>
+          <p className="payment-description text-center font-light text-white/80 font-inter">{PaymentDescrip}</p>
         </div>
         <div className={`methodes ${MethodsVisibility} flex-col gap-8`}>
             <div className="time flex bg-white/20 py-[3px] px-[3px] w-fit rounded-full">
@@ -26,7 +26,7 @@ const PricingCard = ({ setSelectedDuration, selectedDuration, NavClassName, Paym
           <h2 className='text-lg text-white font-medium'>All-access pass to curated Mac and iOS apps</h2>
           <h3 className='text-[16px] text-white/50 font-medium'>Starting from $8.99/month</h3>
         </div>
-        <button className={`try-for-free flex gap-2 items-center justify-center py-[10px] px-8 font-inter-medium font-medium  rounded-full ${ButtonClassName}`}>
+        <button className={`try-for-free flex gap-2 items-center justify-center py-[10px] px-8 font-inter font-medium  rounded-full ${ButtonClassName}`}>
           <img src={ButtonIcon} alt='Apple Logo' className='w-4' draggable='false' />
           {TrialButton}
         </button>

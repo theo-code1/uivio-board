@@ -72,7 +72,7 @@ const PeopleSays = () => {
 
   return (
     <section className='h-fit max-w-screen bg-[#f6f6f8] pt-32 flex flex-col gap-24 overflow-hidden'>
-        <h1 className='text-4xl md:text-6xl text-black text-center font-inter-bold font-bold'>People everywhere<br />love Paste</h1>
+        <h1 className='text-4xl md:text-6xl text-black text-center font-inter font-bold'>People everywhere<br />love Paste</h1>
         <div className="people-says-container md:w-[82dvw] lg:w-[56%] columns-1 md:columns-2 lg:columns-3 column-gap-tight items-center justify-center flex-wrap mx-auto" >
             {PeopleMessageInfo.map((item, index) => {
 
