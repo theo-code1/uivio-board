@@ -43,8 +43,8 @@ const PricingSection = () => {
   ]
 
   return (
-    <section className='max-w-screen h-fit relative -top-12 flex flex-col items-center gap-24 px-2 pt-32 bg-white font-inter-regular'>
-        <h1 className='text-6xl text-center font-inter-bold font-bold'>Ready to up your <br className='hidden md:flex'/> clipboard game?</h1>
+    <section className='max-w-screen h-fit relative -top-12 flex flex-col items-center gap-24 px-2 pt-32 bg-white font-inter'>
+        <h1 className='text-6xl text-center font-inter font-bold'>Ready to up your <br className='hidden md:flex'/> clipboard game?</h1>
         <div className="pricing-methodes flex flex-col md:flex-row gap-4 md:px=8">
           <PricingCard 
               NavClassName={`bg-[#2997FF] md:[50dvw] lg:w-[36dvw] px-8 md:px-20 lg:px-28`}

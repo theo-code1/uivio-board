@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
-@font-face {
+/* @font-face {
     font-family: "inter-light";
     src: url('../src/assets/fonts/Inter-Light.ttf');
 }
@@ -19,13 +20,14 @@
 @font-face {
     font-family: "inter-bold";
     src: url('../src/assets/fonts/Inter-Bold.ttf');
-}
+} */
 :root{
-    --font-inter-light: "inter-light", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    /* --font-inter-light: "inter-light", sans-serif;
     --font-inter-regular: "inter-regular", sans-serif;
     --font-inter-medium: "inter", sans-serif;
     --font-inter-bold: "inter-bold", sans-serif;
-    --font-inter-semibold: "inter-semibold", sans-serif;
+    --font-inter-semibold: "inter-semibold", sans-serif; */
     --color-primary-blue: '#0A84FF';
     --color-secondary-blue: '#0069D4';
     --color-accent-blue: '#2997FF';

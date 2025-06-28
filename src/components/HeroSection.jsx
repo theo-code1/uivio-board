@@ -11,8 +11,8 @@ const HeroSection = ({ hamburgerColor = "black" }) => {
         <section id="hero-section" className="h-[125dvh] md:h-[100dvh] lg:h-[140dvh] flex flex-col gap-16 relative top-0">
             <NavBar hamburgerColor={hamburgerColor} />
             <img src={Devices} alt="Apple Devices" className="w-[75%] lg:w-[55%] z-10 mx-auto mt-8 lg:mt-4" draggable='false'/>
-            <div className="headlines  font-inter-regular mx-auto flex flex-col gap-4 ">
-                <h1 className="text-[32px] md:text-[56px] lg:text-6xl tracking-tight font-inter-bold font-bold text-center">The clipboard as it should be </h1>
+            <div className="headlines  font-inter mx-auto flex flex-col gap-4 ">
+                <h1 className="text-[32px] md:text-[56px] lg:text-6xl tracking-tight font-inter font-bold text-center">The clipboard as it should be </h1>
                 <p className="text-center tracking-tight text-lg md:text-2xl">Paste is a new way to keep, search, and organize everything <br className="hidden md:flex"/>
                     you copy on your Mac, iPhone, and iPad.</p>
             </div>

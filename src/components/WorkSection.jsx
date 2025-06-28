@@ -32,10 +32,10 @@ const WorkSection = () => {
     ]
 
   return (
-    <section className='bg-[#101010] max-w-screen font-inter-regular py-32 flex flex-col gap-16'>
+    <section className='bg-[#101010] max-w-screen font-inter py-32 flex flex-col gap-16'>
         <div className="headers flex flex-col gap-4 md:gap-8">
-            <h1 className="header font-inter-bold font-bold text-white text-4xl md:text-[60px] leading-12 md:leading-16 text-center">A better clipboard<br />for everyone</h1>
-            <p className='text-white font-inter-medium font-medium text-xl md:text-2xl text-center px-4 md:px-0'>Whether you do it for work or just for fun,<br className='hidden md:flex'/> do it faster with Paste.</p>
+            <h1 className="header font-inter font-bold text-white text-4xl md:text-[60px] leading-12 md:leading-16 text-center">A better clipboard<br />for everyone</h1>
+            <p className='text-white font-inter font-medium text-xl md:text-2xl text-center px-4 md:px-0'>Whether you do it for work or just for fun,<br className='hidden md:flex'/> do it faster with Paste.</p>
         </div>
         <img src={MacImg} alt="Copied Code in Mac" className='w-[85%] md:w-[75%] lg:w-2/3 mx-auto select-none' draggable='false'/>
         <div className="Jobs-articles flex flex-col gap-16 mt-16 md:[75%] lg:w-2/3 mx-auto ">
