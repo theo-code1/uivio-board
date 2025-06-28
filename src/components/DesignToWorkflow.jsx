@@ -35,15 +35,15 @@ function DesignToWorkflow() {
     ]
 
     return(
-        <section className="bg-[#F5F5F7] max-w-screen md:max-w-screen h-auto pb-30 font-inter-regular pt-48 flex flex-col gap-44">
-            <h1 className="headline-gradient text-4xl md:text-6xl lg:text-7xl w-[90%] translate-x-[5%] md:translate-x-0 md:w-auto font-inter-bold font-bold text-center lg:leading-20">
+        <section className="bg-[#F5F5F7] max-w-screen md:max-w-screen h-auto pb-30 font-inter pt-48 flex flex-col gap-44">
+            <h1 className="headline-gradient text-4xl md:text-6xl lg:text-7xl w-[90%] translate-x-[5%] md:translate-x-0 md:w-auto font-inter font-bold text-center lg:leading-20">
             Unobtrusive design that <br className="hidden md:flex"/>blends into your workflow
             </h1>
             <div className="Cards flex flex-col gap-6 ">
                 <DesignCard 
                     Label={CardsInfo[0].Label} Color={'text-green-500'} 
                     Headline={CardsInfo[0].Headline.map((line, index) => (
-                        <h1 key={index} className={`text-center text-3xl md:text-5xl font-inter-semibold font-semibold `}>
+                        <h1 key={index} className={`text-center text-3xl md:text-5xl font-inter font-semibold `}>
                             {line}
                             <br />
                         </h1>
@@ -91,7 +91,7 @@ function DesignToWorkflow() {
                         ))}  
                         Color={'text-black'} 
                         Headline={CardsInfo[3].Headline.map((line, index) => (
-                            <h1 key={index} className={`text-center text-3xl md:text-5xl font-inter-semibold font-semibold text-[24px] md:text-[32px] lg:text-[40px]`}>
+                            <h1 key={index} className={`text-center text-3xl md:text-5xl font-inter font-semibold text-[24px] md:text-[32px] lg:text-[40px]`}>
                                 {line}
                                 <br />
                             </h1>
@@ -109,7 +109,7 @@ function DesignToWorkflow() {
                         ))} 
                         Color={'text-black'} 
                         Headline={CardsInfo[4].Headline.map((line, index) => (
-                            <h1 key={index} className={`text-center text-3xl md:text-5xl font-inter-semibold font-semibold text-[24px] md:text-[32px] lg:text-[40px]'`}>
+                            <h1 key={index} className={`text-center text-3xl md:text-5xl font-inter font-semibold text-[24px] md:text-[32px] lg:text-[40px]'`}>
                                 {line}
                                 <br />
                             </h1>

@@ -36,8 +36,8 @@ const FeaturesSection = () => {
     ]
     
   return (
-    <section className="h-fit overflow-hidden max-w-screen bg-[#F5F5F7] font-inter-medium ">
-        <h1 className="headline-gradient text-4xl md:text-6xl lg:text-7xl text-center bg-gray-bg border pt-24 pb-20 md:pb-40 font-inter-bold font-bold lg:leading-20">Powerful features<br />to boost your productivity</h1>
+    <section className="h-fit overflow-hidden max-w-screen bg-[#F5F5F7] font-inter ">
+        <h1 className="headline-gradient text-4xl md:text-6xl lg:text-7xl text-center bg-gray-bg border pt-24 pb-20 md:pb-40 font-inter font-bold lg:leading-20">Powerful features<br />to boost your productivity</h1>
 
         <div className="Features-cards flex flex-col gap-6 max-w-screen bg-white py-20 pb-40 lg:py-40">
             <div className="first-row flex flex-col md:flex-row gap-10 md:gap-6 mx-auto w-[90dvw] mdw-[75%] lg:w-[60dvw]">
@@ -56,7 +56,7 @@ const FeaturesSection = () => {
                     HeadlineClassName={`md:text-3xl lg:text-4xl`}
                     Headline={featuresInfo[1].Headline}
                     ParaText={featuresInfo[1].Span}
-                    SpanClassName={`text-[16px] md:text-sm lg:text-[16px] font-inter-medium font-medium`}
+                    SpanClassName={`text-[16px] md:text-sm lg:text-[16px] font-inter font-medium`}
                     Img={featuresInfo[1].img}
                     ImgClassName={`mb-12 md:mb-24`}
                     />
