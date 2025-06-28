@@ -28,10 +28,10 @@ const NavBar = ({ hamburgerColor = "black" }) => {
     };
 
     return(
-        <nav className="w-screen flex justify-between items-center mx-auto font-inter-medium z-40 py-4 px-[20%] sticky top-0 border-0 lg:border-b border-b-black/10 bg-white ">
+        <nav className="w-screen flex justify-between items-center mx-auto font-inter z-40 py-4 px-[20%] sticky top-0 border-0 lg:border-b border-b-black/10 bg-white ">
             <a href='#hero-section' className="brand-logo absolute left-4 top-3 lg:relative lg:top-0 flex items-center gap-2">
                 <img className='size-10 md:size-12 select-none' src={uiLogo} alt="Uivio Logo"  draggable='false' />
-                <h1 className='text-xl md:text-2xl font-inter-semibold font-semibold'>UIvio</h1>
+                <h1 className='text-xl md:text-2xl font-inter font-semibold'>UIvio</h1>
             </a>
 
             {/* Hamburger Menu Button */}
@@ -53,7 +53,7 @@ const NavBar = ({ hamburgerColor = "black" }) => {
 
             {/* Mobile Menu */}
             <div className={`fixed top-0 right-0 h-full w-64 bg-white transform transition-transform duration-300 ease-in-out md:hidden ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-                <ul className='flex flex-col p-6 gap-6 font-inter-regular font-[500] text-[14px] mt-12'>
+                <ul className='flex flex-col p-6 gap-6 font-inter font-[500] text-[14px] mt-12'>
                     <div className="li relative">
                         <li className='relative text-black text-[16px] hover:text-black/50 transition-all duration-150'>
                             <button 
@@ -105,7 +105,7 @@ const NavBar = ({ hamburgerColor = "black" }) => {
             </div>
 
             {/* Desktop Menu */}
-            <ul className='hidden md:flex items-center gap-8 absolute top-6 left-1/2 -translate-x-1/2 lg:relative lg:left-0 lg:top-0 lg:translate-x-0 font-inter-regular font-[500] text-[14px]'>
+            <ul className='hidden md:flex items-center gap-8 absolute top-6 left-1/2 -translate-x-1/2 lg:relative lg:left-0 lg:top-0 lg:translate-x-0 font-inter font-[500] text-[14px]'>
                 <div className="li relative group">
                     <li 
                         className='relative text-black hover:text-black/50 transition-all duration-150 group'
@@ -136,7 +136,7 @@ const NavBar = ({ hamburgerColor = "black" }) => {
                             {menuItems.resources.title} <Arrow />
                         </a>
                     </li>
-                    <div className='hidden group-hover:flex flex-col justify-center gap-2 bg-white/95 shadow-2xl shadow-black/25 font-inter-regular text-center rounded-lg transition-all duration-200 absolute -bottom-36 left-1/2 -translate-x-1/2 w-32 h-36 '>
+                    <div className='hidden group-hover:flex flex-col justify-center gap-2 bg-white/95 shadow-2xl shadow-black/25 font-inter text-center rounded-lg transition-all duration-200 absolute -bottom-36 left-1/2 -translate-x-1/2 w-32 h-36 '>
                         {hoveredItem === 'resources' && menuItems.resources.options.map((option, index) => (
                             <React.Fragment key={index}>
                                 <div className="p-2 rounded-lg cursor-pointer">
