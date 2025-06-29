@@ -1,6 +1,7 @@
-import UIvioWhiteLogo from '../assets/UIvio-white-logo.webp'
+import UIvioWhiteLogo from '../assets/UIvio-White-logo.webp';
 import Facebook from './icons/Facebook.svg';
 import Twitter from './icons/Xtwitter.svg';
+
 
 const Footer = () => {
     const ListHeaderClassName =' text-lg font-semibold mb-4';
