@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import uiLogo from '../assets/UIvio-Black-logo.webp';
+import uiLogo from '../assets/black-logo.webp';
 import Arrow from './icons/Arrow';
 
 const NavBar = ({ hamburgerColor = "black" }) => {

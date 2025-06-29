@@ -1,4 +1,4 @@
-import UIvioWhiteLogo from '../assets/UIvio-White-logo.webp';
+import UIvioWhiteLogo from '../assets/White-logo.webp';
 import Facebook from './icons/Facebook.svg';
 import Twitter from './icons/Xtwitter.svg';
 
