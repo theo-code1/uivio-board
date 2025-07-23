@@ -40,22 +40,6 @@ This landing page is fully responsive and optimized for:
 
 It uses mobile-first design with Tailwind breakpoints: `sm`, `md`, `lg`, and `xl`.
 
----
-
-## 📁 Project Structure
-
-src/
-├── assets/ # Images, icons, logos
-├── components/ # All React components
-│ ├── Header.jsx
-│ ├── Hero.jsx
-│ ├── Features.jsx
-│ ├── Testimonials.jsx
-│ ├── Pricing.jsx
-│ └── Footer.jsx
-├── App.jsx
-└── main.jsx
-
 
 
 ---
@@ -76,6 +60,7 @@ npm install
 
 # 4. Run the development server
 npm run dev
+```
 
 
 🙌 Acknowledgments
