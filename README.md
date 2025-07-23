@@ -1,13 +1,85 @@
-# React + Vite
+# 📋 Uivio Board – Clipboard App Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and fully responsive landing page for a clipboard productivity app, built using **ReactJS** and **Tailwind CSS**. It presents the app’s core features like clipboard history, device sync, and productivity tracking in a clean and engaging layout.
 
-Currently, two official plugins are available:
+🌐 **Live Site**: [[https://uivio-board.vercel.app](https://uivio-board.vercel.app/)]    
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# uivio-board
+- 📱 Multi-device responsive preview
+- 🧠 Unlimited clipboard history section
+- 🔍 Search bar with real-time filtering UI
+- 🔄 Cross-device sync capabilities
+- 🔐 End-to-end privacy section
+- 📊 Productivity analytics & timers
+- ⚙️ Custom user rules block
+- 💬 Real user testimonials
+- 💸 Pricing plans with monthly and team options
+- 🌑 Modern dark footer with developer-friendly info
+
+---
+
+## 🛠️ Tech Stack
+
+- **ReactJS** – Component-based front-end
+- **Tailwind CSS** – Utility-first CSS framework
+- **Vite** – Lightweight and fast development server
+- **Vercel** – Hosting and deployment
+
+---
+
+## 📱 Responsiveness
+
+This landing page is fully responsive and optimized for:
+
+- ✅ Desktop
+- ✅ Tablet
+- ✅ Mobile
+
+It uses mobile-first design with Tailwind breakpoints: `sm`, `md`, `lg`, and `xl`.
+
+---
+
+## 📁 Project Structure
+
+src/
+├── assets/ # Images, icons, logos
+├── components/ # All React components
+│ ├── Header.jsx
+│ ├── Hero.jsx
+│ ├── Features.jsx
+│ ├── Testimonials.jsx
+│ ├── Pricing.jsx
+│ └── Footer.jsx
+├── App.jsx
+└── main.jsx
+
+
+
+---
+
+## ▶️ Getting Started
+
+To run this project locally:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/yourusername/uivio-board.git
+
+# 2. Navigate into the project
+cd uivio-board
+
+# 3. Install dependencies
+npm install
+
+# 4. Run the development server
+npm run dev
+
+
+🙌 Acknowledgments
+Design inspired by modern SaaS marketing pages. All images and logos used are for demonstration purposes only.
+
+🧑‍💻 Author
+Made with ❤️ by Theokode
