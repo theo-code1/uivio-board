@@ -57,7 +57,7 @@ function DesignToWorkflow() {
                     Label={CardsInfo[1].Label} 
                     Color={'text-purple-500'} 
                     Headline={CardsInfo[1].Headline.map((line, index) => (
-                        <h1 key={index}>
+                        <h1 key={index} className={`text-center text-3xl md:text-5xl font-inter font-semibold `} >
                             {line}
                             <br />
                         </h1>
@@ -72,7 +72,7 @@ function DesignToWorkflow() {
                     Label={CardsInfo[2].Label} 
                     Color={'text-red-500'} 
                     Headline={CardsInfo[2].Headline.map((line, index) => (
-                        <h1 key={index}>
+                        <h1 key={index} className={`text-center text-3xl md:text-5xl font-inter font-semibold `} >
                             {line}
                             <br />
                         </h1>
